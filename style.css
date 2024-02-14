@@ -1,0 +1,494 @@
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url(./assets/fonts/montserrat/static/);
+} */
+
+:root {
+    --yellow: #ffc200;
+    --grey: #2f2f2f;
+    --darkgrey: #333333;
+}
+
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.nav-bar {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .nav-bar-ul {
+        color: white;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+main {
+    
+    .zero {
+        display: flex;
+        /* flex-wrap: wrap; */
+        height: 90vh;
+
+        .main-div-1 {
+            position: relative;
+            width: calc(44.4% - 10px);
+
+            .main-div-1-img-1 {
+                display: inline-block;
+                background: url(./assets/mainImg.svg) no-repeat;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        background-color: var(--darkgrey);
+
+        .main-div-2 {
+            position: relative;
+            width: calc(55.6% - 10px);
+            margin-left: 20px;
+            height: 100%;
+
+            .main-div-2-img-1 {
+                display: inline-block;
+                background: url(./assets/greypatch.svg) no-repeat left;
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                position: absolute;
+                top: 0rem;
+                right: 20%;
+                transform: translateX(-10%);
+            }
+
+            div {
+
+                position: absolute;
+                top: 25%;
+                left: 5%;
+                z-index: 100;
+
+                h1 {
+                    font-size: 7rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    font-family: "Grand Hotel", cursive;
+                    color: var(--yellow);
+                }
+
+                p {
+                    width: 80%;
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                    color: white;
+                }
+
+                button {
+                    padding: 1rem 3rem;
+                    border: none;
+                    background-color: var(--yellow);
+                    color: black;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 5px;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .section-1 {
+        background-color: white;
+
+        & .container {
+            padding: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & h1 {
+                color: var(--grey);
+                font-family: "Grand Hotel", cursive;
+                font-size: 3rem;
+            }
+
+            & p {
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            & .container-div {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 5rem;
+                gap: 2rem;
+
+                & .container-div-div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    & img {
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        height: 90vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-family: "Grand Hotel", cursive;
+                font-size: 3rem;
+                color: var(--grey);
+            }
+
+            p {
+                width: 500px;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            div {
+                margin-top: 2rem;
+                display: flex;
+
+                input {
+                    width: 350px;
+                    padding: 10px;
+                    border: none;
+
+                    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+                }
+
+                button {
+                    padding: 10px;
+                    background-color: var(--yellow);
+                    border: none;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .section-3 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 1rem;
+            text-align: center;
+            color: var(--darkgrey);
+            font-size: 2rem;
+            h1 {
+                margin-top: 2rem;
+                font-size: 2rem;
+                font-family: "Grand Hotel", cursive;
+                color: var(--darkgrey);
+            }
+        }
+        background-color: #ffe437;
+        .main-img {
+            height: 100vh;
+            object-fit: cover;
+            mix-blend-mode: overlay;
+        }
+    }
+
+    .section-4 {
+        position: relative;
+        padding: 0 15rem;
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .section-4-img-bg {
+            display: inline-block;
+            background: url(./assets/Vector\ Smart\ Object\ \(Double\ Click\ to\ Edit\).svg) no-repeat top;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+
+        div:nth-child(1){
+            .section-4-img{
+                display: block;
+                background: url('./assets/Place\ Your\ Image\ Here\ \(Double\ Click\ to\ Edit\).svg') no-repeat;
+                width: 450px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+
+        div:nth-child(2) {
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.2rem;
+
+            h1 {
+                font-size: 5rem;
+                color: var(--yellow);
+                font-family: 'Grand Hotel', cursive;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                width: 70%;
+                color: white;
+            }
+
+            button {
+                width: 300px;
+                padding: 1rem 3rem;
+                border: none;
+                background-color: var(--yellow);
+                color: black;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                border-radius: 5px;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .section-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* gap: 2rem; */
+
+        background-color: var(--darkgrey);
+
+        h1 {
+            font-size: 5rem;
+            color: var(--yellow);
+            font-family: 'Grand Hotel', cursive;
+        }
+
+        p {
+            margin-top: 2rem;
+            width: 40%;
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        .section-5-div{
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            .section-5-div-div{
+                width: 250px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* padding: 1rem; */
+                border: 4px solid white;
+                border-radius: 50%;
+
+                .section-5-div-div-p {
+                    margin-top: 0px;
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
+    .section-6 {
+        position: relative;
+        padding: 0 15rem;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .section-6-img-bg {
+            display: inline-block;
+            background: url('./assets//bar3.svg') no-repeat bottom;
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* scale: 0.3; */
+            top: 0;
+            left: 0;
+        }
+
+
+        div:nth-child(2){
+            .section-6-img{
+                display: block;
+                background: url('./assets/ff.svg') no-repeat;
+                width: 450px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+
+
+        div:nth-child(1) {
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.2rem;
+
+            h1 {
+                font-size: 5rem;
+                color: var(--yellow);
+                font-family: 'Grand Hotel', cursive;
+            }
+
+            p {
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                width: 70%;
+                color: white;
+            }
+
+            button {
+                width: 300px;
+                padding: 1rem 3rem;
+                border: none;
+                background-color: var(--yellow);
+                color: black;
+                font-size: 1.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                border-radius: 5px;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+}
+
+footer {
+    padding: 10rem 7rem;
+    background-color: var(--darkgrey);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    & .footer-left {
+        width: calc(33.3% - 10px);
+
+        & p {
+            margin-top: 1rem;
+        }
+
+        & div {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    & .footer-right {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+        & .footer-right-div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+}
+
+/* First BreakPoint */
+@media screen and (max-width: 640px) {
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+
+        .footer-left {
+            width: 100%;
+        }
+    }
+
+    .section-3 {
+        div {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
