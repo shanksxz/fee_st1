@@ -11,10 +11,11 @@
 
 * {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
+    overflow: none;
 }
 
 body {
@@ -39,11 +40,11 @@ body {
 }
 
 main {
-    
+
     .zero {
+        width: 100%;
         display: flex;
-        /* flex-wrap: wrap; */
-        height: 90vh;
+        height: 100vh;
 
         .main-div-1 {
             position: relative;
@@ -51,26 +52,26 @@ main {
 
             .main-div-1-img-1 {
                 display: inline-block;
-                background: url(./assets/mainImg.svg) no-repeat;
+                background: url(./assets/mainImg.svg) no-repeat center;
+                background-size: cover;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
-
+        
         background-color: var(--darkgrey);
-
+        
         .main-div-2 {
             position: relative;
             width: calc(55.6% - 10px);
             margin-left: 20px;
             height: 100%;
-
+            
             .main-div-2-img-1 {
                 display: inline-block;
-                background: url(./assets/greypatch.svg) no-repeat left;
+                background: url(./assets/greypatch.svg) no-repeat left center;
+                background-size: cover;
                 width: 100%;
-                object-fit: cover;
                 height: 100%;
                 position: absolute;
                 top: 0rem;
@@ -81,7 +82,7 @@ main {
             div {
 
                 position: absolute;
-                top: 25%;
+                top: 20%;
                 left: 5%;
                 z-index: 100;
 
@@ -243,15 +244,16 @@ main {
     .section-4 {
         position: relative;
         padding: 0 15rem;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* background-position: cover; */
 
         .section-4-img-bg {
             display: inline-block;
-            background: url(./assets/Vector\ Smart\ Object\ \(Double\ Click\ to\ Edit\).svg) no-repeat top;
-            object-fit: cover;
+            background: url('./assets/bar1.svg') no-repeat top;
+            background-size: cover;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -371,13 +373,12 @@ main {
 
         .section-6-img-bg {
             display: inline-block;
-            background: url('./assets//bar3.svg') no-repeat bottom;
-            object-fit: cover;
+            background: url('./assets/bar2.svg') no-repeat bottom center;
+            background-size: cover;
             position: absolute;
             width: 100%;
             height: 100%;
             z-index: -1;
-            /* scale: 0.3; */
             top: 0;
             left: 0;
         }
@@ -472,6 +473,14 @@ footer {
 
 /* First BreakPoint */
 @media screen and (max-width: 640px) {
+
+    main {
+        .zero {
+            flex-direction: column;
+            display: none;
+        }
+    }
+
     footer {
         padding: 2rem;
         flex-direction: column;
@@ -492,3 +501,9 @@ footer {
         }
     }
 }
+
+
+
+
+/* BreakPoint - 1536 for my pc */
+
