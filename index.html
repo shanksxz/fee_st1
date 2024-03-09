@@ -14,10 +14,14 @@
     </head>
 
     <body>
+
         <!-- Header -->
         <header class="header">
+            <!-- NavBar -->
             <nav class="nav-bar">
-                <img src="./assets/logo.svg" height="25" alt="" />
+
+                <img src="./assets/logo.svg" alt="Logo" />
+
                 <ul class="nav-bar-ul">
                     <li class="naav-bar-ul-li">Home</li>
                     <li class="naav-bar-ul-li">Product</li>
@@ -27,21 +31,31 @@
                     <li class="naav-bar-ul-li">
                         <img
                             src="./assets/Search.svg"
-                            height="20"
-                            width="20"
+                            width="25"
+                            height="25"
                             alt=""
                         />
                     </li>
                 </ul>
+
+                    <img src="./assets/barm.svg" class="bar" alt="">
             </nav>
+            <ul class="mb-vw">
+                <li class="naav-bar-ul-li">Home</li>
+                <li class="naav-bar-ul-li">Product</li>
+                <li class="naav-bar-ul-li">Promo</li>
+                <li class="naav-bar-ul-li">About</li>
+                <li class="naav-bar-ul-li">Contact</li>
+            </ul>
         </header>
 
         <!-- Main -->
         <main>
+
+            <!-- Hero Section -->
             <section class="zero">
                 <div class="main-div-1">
                     <span class="main-div-1-img-1"></span>
-                    <!-- <img class="main-div-img-1" alt=""> -->
                 </div>
                 <div class="main-div-2">
                     <div>
@@ -70,7 +84,9 @@
 
                     <div class="container-div">
                         <div class="container-div-div">
-                            <img src="./assets/img1.svg" alt="" />
+                            <div>
+                                <img src="./assets/img1.svg" alt="" />
+                            </div>
                             <h1>Title Here</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur
@@ -99,7 +115,8 @@
 
             <section class="section-4">
                 <div>
-                    <span class="section-4-img"></span>
+                    <!-- <span class="section-4-img"></span> -->
+                    <img class="section-4-img" src="./assets/Place Your Image Here (Double Click to Edit).svg" alt="">
                 </div>
                 <div>
                     <h1>Oriental Taste</h1>
@@ -154,6 +171,7 @@
                 </div>
                 <div>
                     <span class="section-6-img"></span>
+                    <img src="./assets/ff.svg" class="section-6-img" alt="">
                 </div>
                 <span class="section-6-img-bg"></span>
             </section>
@@ -230,5 +248,11 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            document.querySelector(".bar").addEventListener("click", () => {
+                document.querySelector(".mb-vw").classList.toggle("active");
+            });
+        </script>
     </body>
 </html>
